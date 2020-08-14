@@ -10,7 +10,7 @@ FROM masteroleary/selenium-dotnetcore2.2-linux:v2 AS build
 
 WORKDIR /src
 
-COPY ["ScrapingWithSelenuim.csproj", ""]
+COPY *.csproj ./
 
 RUN dotnet restore "ScrapingWithSelenuim.csproj"
 
