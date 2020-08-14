@@ -1,31 +1,33 @@
 FROM masteroleary/selenium-dotnetcore2.2-linux:v2 AS base
 
- WORKDIR /app
+WORKDIR /app
 
- EXPOSE 80
+EXPOSE 80
 
- EXPOSE 443
+EXPOSE 443
 
- FROM masteroleary/selenium-dotnetcore2.2-linux:v2 AS build WORKDIR /src
+FROM masteroleary/selenium-dotnetcore2.2-linux:v2 AS build 
 
- COPY ["ScrapingWithSelenuim.csproj", ""]
+WORKDIR /src
 
- RUN dotnet restore "ScrapingWithSelenuim.csproj"
+COPY ["ScrapingWithSelenuim.csproj", ""]
 
- COPY . .
+RUN dotnet restore "ScrapingWithSelenuim.csproj"
 
- WORKDIR "/src/"
+COPY . .
 
- RUN dotnet build "ScrapingWithSelenuim.csproj" -c Prod -o /app
+WORKDIR "/src/"
 
- FROM build AS publish
+RUN dotnet build "ScrapingWithSelenuim.csproj" -c Prod -o /app
 
- RUN dotnet publish "ScrapingWithSelenuim.csproj" -c Prod -o /app
+FROM build AS publish
 
- FROM base AS final
+RUN dotnet publish "ScrapingWithSelenuim.csproj" -c Prod -o /app
 
- WORKDIR /app
+FROM base AS final
 
- COPY --from=publish /app .
+WORKDIR /app
 
- ENTRYPOINT ["dotnet", "ScrapingWithSelenuim.dll"]
+COPY --from=publish /app .
+
+ENTRYPOINT ["dotnet", "ScrapingWithSelenuim.dll"]
