@@ -1,0 +1,14 @@
+C:\Users\abramhankar\Source\Repos\SeleniumWithCsharp\ScrapingWithSelenuim\ScrapingWithSelenuim\bin\Debug\netcoreapp2.2\ScrapingWithSelenuim.deps.json
+C:\Users\abramhankar\Source\Repos\SeleniumWithCsharp\ScrapingWithSelenuim\ScrapingWithSelenuim\bin\Debug\netcoreapp2.2\ScrapingWithSelenuim.runtimeconfig.json
+C:\Users\abramhankar\Source\Repos\SeleniumWithCsharp\ScrapingWithSelenuim\ScrapingWithSelenuim\bin\Debug\netcoreapp2.2\ScrapingWithSelenuim.runtimeconfig.dev.json
+C:\Users\abramhankar\Source\Repos\SeleniumWithCsharp\ScrapingWithSelenuim\ScrapingWithSelenuim\bin\Debug\netcoreapp2.2\ScrapingWithSelenuim.dll
+C:\Users\abramhankar\Source\Repos\SeleniumWithCsharp\ScrapingWithSelenuim\ScrapingWithSelenuim\obj\Debug\netcoreapp2.2\ScrapingWithSelenuim.csprojAssemblyReference.cache
+C:\Users\abramhankar\Source\Repos\SeleniumWithCsharp\ScrapingWithSelenuim\ScrapingWithSelenuim\obj\Debug\netcoreapp2.2\ScrapingWithSelenuim.csproj.CoreCompileInputs.cache
+C:\Users\abramhankar\Source\Repos\SeleniumWithCsharp\ScrapingWithSelenuim\ScrapingWithSelenuim\obj\Debug\netcoreapp2.2\ScrapingWithSelenuim.RazorAssemblyInfo.cache
+C:\Users\abramhankar\Source\Repos\SeleniumWithCsharp\ScrapingWithSelenuim\ScrapingWithSelenuim\obj\Debug\netcoreapp2.2\ScrapingWithSelenuim.RazorAssemblyInfo.cs
+C:\Users\abramhankar\Source\Repos\SeleniumWithCsharp\ScrapingWithSelenuim\ScrapingWithSelenuim\obj\Debug\netcoreapp2.2\ScrapingWithSelenuim.AssemblyInfoInputs.cache
+C:\Users\abramhankar\Source\Repos\SeleniumWithCsharp\ScrapingWithSelenuim\ScrapingWithSelenuim\obj\Debug\netcoreapp2.2\ScrapingWithSelenuim.AssemblyInfo.cs
+C:\Users\abramhankar\Source\Repos\SeleniumWithCsharp\ScrapingWithSelenuim\ScrapingWithSelenuim\obj\Debug\netcoreapp2.2\ScrapingWithSelenuim.RazorTargetAssemblyInfo.cache
+C:\Users\abramhankar\Source\Repos\SeleniumWithCsharp\ScrapingWithSelenuim\ScrapingWithSelenuim\bin\Debug\netcoreapp2.2\ScrapingWithSelenuim.pdb
+C:\Users\abramhankar\Source\Repos\SeleniumWithCsharp\ScrapingWithSelenuim\ScrapingWithSelenuim\obj\Debug\netcoreapp2.2\ScrapingWithSelenuim.dll
+C:\Users\abramhankar\Source\Repos\SeleniumWithCsharp\ScrapingWithSelenuim\ScrapingWithSelenuim\obj\Debug\netcoreapp2.2\ScrapingWithSelenuim.pdb
