@@ -23,8 +23,20 @@ namespace ScrapingWithSelenuim.Controllers
         {
             try
             {
+                //String driverPath = "/opt/selenium/";
+                //String driverExecutableFileName = "chromedriver";
+                //ChromeOptions options = new ChromeOptions();
+                //options.AddArgument("--headless");
+                //options.AddArguments("no-sandbox");
+                //options.BinaryLocation = "/opt/google/chrome/chrome";
+                //ChromeDriverService service = ChromeDriverService.CreateDefaultService(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), options.ToString());
+                //IWebDriver driver = new ChromeDriver(service, options, TimeSpan.FromSeconds(30));
+                //driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(40);
+                //driver.Manage().Window.Maximize();
                 ChromeOptions options = new ChromeOptions();
                 options.AddArgument("--headless");
+                options.AddArguments("no-sandbox");
+                //options.BinaryLocation = "/opt/google/chrome/chrome";
                 // Iss line pe doubt hai kyu yaha pe jo Path aara hoga wo shayad linux mai exist nahi karta hoga.
                 IWebDriver driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), options);
                 WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
