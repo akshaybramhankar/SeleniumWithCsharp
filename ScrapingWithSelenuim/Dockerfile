@@ -10,13 +10,22 @@ RUN rm /chrome.deb
 
 # Install chromedriver for Selenium
 
+RUN apt-get update
+
 RUN apt-get install unzip
 
-RUN wget https://chromedriver.storage.googleapis.com/2.31/chromedriver_linux64.zip -o /usr/local/bin/chromedriver
+RUN wget -N http://chromedriver.storage.googleapis.com/2.29/chromedriver_linux64.zip -P ~/Downloads
 
-RUN unzip /usr/local/bin/chromedriver/chromedriver_linux64.zip -d /usr/local/bin/chromedriver
+RUN unzip ~/Downloads/chromedriver_linux64.zip -d ~/Downloads
+
+RUN mv -f ~/Downloads/chromedriver /usr/local/bin/
 
 RUN chmod +x /usr/local/bin/chromedriver
+
+# Create symbolic links
+RUN ln -s /usr/local/bin/chromedriver /usr/local/bin/chromedriver
+
+RUN ln -s /usr/local/bin/chromedriver /usr/bin/chromedriver
 
 WORKDIR /app
 
