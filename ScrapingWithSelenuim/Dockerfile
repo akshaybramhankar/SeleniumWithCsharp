@@ -14,7 +14,7 @@ RUN apt-get install unzip
 
 RUN wget https://chromedriver.storage.googleapis.com/2.31/chromedriver_linux64.zip -o /usr/local/bin/chromedriver
 
-unzip /usr/local/bin/chromedriver/chromedriver_linux64.zip -d /usr/local/bin/chromedriver
+RUN unzip /usr/local/bin/chromedriver/chromedriver_linux64.zip -d /usr/local/bin/chromedriver
 
 RUN chmod +x /usr/local/bin/chromedriver
 
