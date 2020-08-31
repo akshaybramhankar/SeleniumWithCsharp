@@ -30,7 +30,7 @@ namespace ScrapingWithSelenuim.Controllers
                 //IWebDriver driver = new ChromeDriver(service, options, TimeSpan.FromSeconds(30));
                 //driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(40);
                 //driver.Manage().Window.Maximize();
-                ChromeOptions options = new ChromeOptions().;
+                ChromeOptions options = new ChromeOptions();
                 options.AddArgument("--headless");
                 options.AddArgument("--no-sandbox");
                 options.AddArgument("--whitelisted-ips");
