@@ -53,7 +53,7 @@ namespace ScrapingWithSelenuim
             }
 
             app.UseSwagger();
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "ScrapingWithSelenium");
