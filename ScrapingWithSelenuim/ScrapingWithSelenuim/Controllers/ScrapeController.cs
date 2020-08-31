@@ -22,10 +22,7 @@ namespace ScrapingWithSelenuim.Controllers
         public OkObjectResult Get()
         {
             try
-            {
-                //String driverPath = "/opt/selenium/";
-                //String driverExecutableFileName = "chromedriver";
-                //ChromeOptions options = new ChromeOptions();
+            {               
                 //options.AddArgument("--headless");
                 //options.AddArguments("no-sandbox");
                 //options.BinaryLocation = "/opt/google/chrome/chrome";
@@ -39,8 +36,10 @@ namespace ScrapingWithSelenuim.Controllers
                 //options.BinaryLocation = "/opt/google/chrome/chrome";
                 // Iss line pe doubt hai kyu yaha pe jo Path aara hoga wo shayad linux mai exist nahi karta hoga.
                 //IWebDriver driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), options);
-                IWebDriver driver = new ChromeDriver(("/usr/local/bin"), options);
-                WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
+                //change in driver config
+                ChromeDriver driver = new ChromeDriver(("/usr/local/bin"), options, TimeSpan.FromMinutes(3));
+                //WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
+                driver.Manage().Timeouts().PageLoad.Add(System.TimeSpan.FromSeconds(30));
                 driver.Navigate().GoToUrl(@"https://www.google.com/");
                 return Ok(new { success = true });
             }
