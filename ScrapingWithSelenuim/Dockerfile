@@ -23,7 +23,7 @@ RUN mv -f ~/Downloads/chromedriver /usr/local/bin/
 RUN chmod +x /usr/local/bin/chromedriver
 
 # Create symbolic links
-RUN ln -s /usr/local/bin/chromedriver /usr/local/bin/chromedriver
+#RUN ln -s /usr/local/bin/chromedriver /usr/local/bin/chromedriver
 
 RUN ln -s /usr/local/bin/chromedriver /usr/bin/chromedriver
 

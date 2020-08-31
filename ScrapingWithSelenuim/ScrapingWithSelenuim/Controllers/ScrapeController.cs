@@ -32,7 +32,9 @@ namespace ScrapingWithSelenuim.Controllers
                 //driver.Manage().Window.Maximize();
                 ChromeOptions options = new ChromeOptions();
                 options.AddArgument("--headless");
-                options.AddArguments("no-sandbox");
+                options.AddArgument("--no-sandbox");
+                options.AddArgument("--disable-extensions");
+               // options.AddArgument("--disable-gpu");
                 //options.BinaryLocation = "/opt/google/chrome/chrome";
                 // Iss line pe doubt hai kyu yaha pe jo Path aara hoga wo shayad linux mai exist nahi karta hoga.
                 //IWebDriver driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), options);
