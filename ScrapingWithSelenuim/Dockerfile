@@ -14,7 +14,7 @@ RUN apt-get update
 
 RUN apt-get install unzip
 
-RUN wget -N http://chromedriver.storage.googleapis.com/2.29/chromedriver_linux64.zip -P ~/Downloads
+RUN wget -N https://chromedriver.storage.googleapis.com/75.0.3770.140/chromedriver_linux64.zip -P ~/Downloads
 
 RUN unzip ~/Downloads/chromedriver_linux64.zip -d ~/Downloads
 
