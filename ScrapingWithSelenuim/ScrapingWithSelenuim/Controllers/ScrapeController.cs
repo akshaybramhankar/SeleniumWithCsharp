@@ -30,9 +30,10 @@ namespace ScrapingWithSelenuim.Controllers
                 //IWebDriver driver = new ChromeDriver(service, options, TimeSpan.FromSeconds(30));
                 //driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(40);
                 //driver.Manage().Window.Maximize();
-                ChromeOptions options = new ChromeOptions();
+                ChromeOptions options = new ChromeOptions().;
                 options.AddArgument("--headless");
                 options.AddArgument("--no-sandbox");
+                options.AddArgument("--whitelisted-ips");
                 options.AddArgument("--disable-extensions");
                // options.AddArgument("--disable-gpu");
                 //options.BinaryLocation = "/opt/google/chrome/chrome";
@@ -43,6 +44,7 @@ namespace ScrapingWithSelenuim.Controllers
                 //WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
                 driver.Manage().Timeouts().PageLoad.Add(System.TimeSpan.FromSeconds(30));
                 driver.Navigate().GoToUrl(@"https://www.google.com/");
+                driver.Quit();
                 return Ok(new { success = true });
             }
             catch (Exception ex)
